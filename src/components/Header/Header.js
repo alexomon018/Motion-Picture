@@ -32,6 +32,7 @@ function Header() {
           onChange={(e) => setQuery(e.target.value)}
         />
       </form>
+
       <div className='header__nav'>
         <Link to='/moviepro' className='header__link'>
           <div className='header__option'>

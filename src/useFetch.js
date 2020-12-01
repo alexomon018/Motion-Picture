@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-const API_END = `http://www.omdbapi.com/?i=tt3896198&apikey=5655c3b5`
+const API_END = `http://www.omdbapi.com/?apikey=5655c3b5`
+
 const useFetch = (urlParams) => {
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState({ show: false, msg: '' })
-  const [data, setData] = useState(null)
+  const [data, setData] = useState([])
 
   const fetchMovies = async (url) => {
     setIsLoading(true)
